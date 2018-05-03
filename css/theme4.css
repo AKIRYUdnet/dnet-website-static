@@ -2027,50 +2027,50 @@ body.menu-open .minimal .nav-content::webkit-scrollbar {
 ---------------------------------- */
 
 body {
-  width: 100wh;
-  height: 90vh;
-  color: #fff;
-  background: linear-gradient(-70deg, #080504, #291d35, #240219, #2c2f2e);
-  background-size: 500% 500%;
-  -webkit-animation: Gradient 20s ease infinite;
-  -moz-animation: Gradient 20s ease infinite;
-  animation: Gradient 20s ease infinite;
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-70deg, #080504, #291d35, #240219, #2c2f2e);
+	background-size: 500% 500%;
+	-webkit-animation: Gradient 20s ease infinite;
+	-moz-animation: Gradient 20s ease infinite;
+	animation: Gradient 20s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 @-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 @keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 .header-in {
@@ -2086,27 +2086,48 @@ body {
   height: 100%;*/
   color: white !important;
 }
-
+#canvas{
+    display:absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    z-index:-1;
+}
+.img-logo{
+    position:absolute;
+    width:100vw;
+    height:100%;
+    top:20%;
+    left:0;
+    padding-right:10%;
+    padding-left:10%;
+   
+}
 #canvas-logo {
   margin: 0 auto;
-  position: absolute;
+  /*position: absolute;  */
   /* display: block; */
   text-align: center;
   top: 20%;
   color: white !important;
-  max-width: 600px;
-  left: 50%;
-  margin-left: -300px;
+  max-width: 600px; 
+  /*left: 50%;
+  margin-left: -300px; */ 
 }
-
+#canvas-logo-isotype2{
+    animation:tronFilter 5s infinite;s
+}
 #canvas-logo-isotype {
   position: relative;
-  display: block;
+  display: block; 
   max-width: 300px;
   margin-left: 150px;
   animation:tronFilter 5s infinite;
 }
-
+#canvas-logo-text2{
+    animation:tronFilter 5s infinite;
+    margin-top:2em;
+}
 #canvas-logo-text {
   position: relative;
   display: block;
@@ -2115,6 +2136,7 @@ body {
   margin-bottom: 20px;
   animation-delay: 10s;
   animation:tronFilter 5s infinite;
+    
 }
 
 .text-js{
@@ -2171,15 +2193,15 @@ body {
 
 .caption-2 {
     /* float: right; */
-    margin: 0 auto;
-    position: absolute;
+    margin: 0 auto; 
+    /*position: absolute; */
     /* display: block; */
     text-align: center;
-    bottom: 0;
+    bottom: 0; 
     color: white !important;
-    width: 600px;
-    left: 50%;
-    margin-left: -300px;
+    max-width: 600px; 
+    /*left: 50%;
+    margin-left: -300px; */
 }
 
 .caption-2 h1 {
@@ -5559,35 +5581,3 @@ overflow: auto; background: rgb(253, 253, 246); padding: 20px; width: 600px; max
   display: none;
 }
 .chart path:hover { opacity: 0.65; }
-
-
-/*-- Button Style --*/
-
-/* Header Top Button */
-
-.start-light .btn:hover {
-  border-color: #418fdf;
-}
-
-.headroom--not-top .btn {
-  border-color: #418fdf;
-}
-
-.headroom-not-top .btn span {
-  color: #418fdf !important; 
-}
-
-/* Fold 1 Button Left */
-
-.secondary-btn span,
-.secondary-btn span i,
-.playvideo span,
-.playvideo span i {
-  color: #fff !important;
-}
-
-/* Fold 1 Button Right */
-
-.secondary-btn {
-  background: #418fdf !important;
-}
