@@ -5559,3 +5559,25 @@ overflow: auto; background: rgb(253, 253, 246); padding: 20px; width: 600px; max
   display: none;
 }
 .chart path:hover { opacity: 0.65; }
+
+
+/* Button Style */
+.start-light .btn {
+  border-color: #fff;
+}
+
+.start-light .btn span,
+.secondary-btn span,
+.secondary-btn span i,
+.playvideo span,
+.playvideo span i {
+  color: #fff !important;
+}
+
+.start-light .btn:hover {
+  border-color: #418fdf;
+}
+
+.secondary-btn {
+  background: #418fdf !important;
+}
